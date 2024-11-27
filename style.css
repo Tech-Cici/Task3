@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1db954, #191414);
+    margin: 0;
+  }
+  
+  /* Music player container */
+  .music-player {
+    background: #121212;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  /* Song and artist info */
+  .info h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #1db954;
+  }
+  
+  .info p {
+    font-size: 16px;
+    color: #b3b3b3;
+    margin: 0;
+  }
+  
+  /* Controls styling */
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    background: #1db954;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .controls button:hover {
+    transform: scale(1.1);
+    background: #1ed760;
+  }
+  
+  .controls button:active {
+    transform: scale(1);
+    background: #0aaf42;
+  }
+  
+  /* Progress bar */
+  .progress-container {
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    background: #1db954;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 480px) {
+    .controls button {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+  
